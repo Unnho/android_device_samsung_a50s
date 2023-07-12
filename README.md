@@ -6,5 +6,5 @@
 # Copyright (C) 2023 SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
-#
+# Device Tree Is Fixed And Modified by Geno3ide Aka Sajid
 ```
