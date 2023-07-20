@@ -12,6 +12,6 @@
 
 ```
 # Clone Your Fav recoveries 11.1 Repository
-$ git clone https://github.com/Unnho/android_device_samsung_a50s.git device/samsung/a50s;lunch twrp_a50s-eng;mka recoveryimage
+$ git clone https://github.com/Unnho/android_device_samsung_a50s.git device/samsung/a50s;lunch twrp_a50s-eng;mka bootimage
 # You'll get recovery.tar in out/target/product/a50s
 ```
