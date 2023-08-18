@@ -99,8 +99,8 @@ TW_USE_TOOLBOX := true
 #SHRP_Variables
 SHRP_SKIP_DEFAULT_ADDON_1 := true
 SHRP_DARK := true
-SHRP_PATH := device/coolpad/c103
-SHRP_MAINTAINER := epicX
+SHRP_PATH := device/samsung/a50s
+SHRP_MAINTAINER := Satoru
 SHRP_DEVICE_CODE := c103
 SHRP_EDL_MODE := 1
 SHRP_EXTERNAL := /external_sd
@@ -115,5 +115,4 @@ SHRP_SKIP_DEFAULT_ADDON_2 := true
 SHRP_SKIP_DEFAULT_ADDON_3 := true
 SHRP_SKIP_DEFAULT_ADDON_4 := true
 SHRP_EXCLUDE_MAGISK_FLASH := true
-
 SHRP_LITE := true
