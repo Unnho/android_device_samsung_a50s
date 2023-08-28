@@ -1,24 +1,22 @@
-/efs                ext4      /dev/block/by-name/sec_efs            flags=display=efs
-/sec_efs            ext4      /dev/block/by-name/sec_efs            flags=display=sec_efs
-/boot               emmc      /dev/block/by-name/boot               flags=display=boot
-/recovery           emmc      /dev/block/by-name/recovery           flags=display=recovery
-/cache              ext4      /dev/block/by-name/cache              flags=display=cache
-/                   ext4      /dev/block/by-name/system             flags=display=
-/data               f2fs      /dev/block/by-name/userdata           flags=display=data
-/sdcard             sdfat     /dev/block/mmcblk0p1                  flags=display=sdcard
-/modem              emmc      /dev/block/by-name/radio              flags=display=modem
-/vendor             ext4      /dev/block/by-name/vendor             flags=display=vendor
-/misc               emmc      /dev/block/by-name/misc               flags=display=misc
-/preload            ext4      /dev/block/by-name/hidden             flags=display=preload
-/cpefs              ext4      /dev/block/by-name/cpefs              flags=display=cpefs
-/product            ext4      /dev/block/by-name/product            flags=display=product
-/dtb                emmc      /dev/block/by-name/dtb                flags=display=dtb
-/dtbo               emmc      /dev/block/by-name/dtbo               flags=display=dtbo
-/keydata            ext4      /dev/block/by-name/keydata            flags=display=keydata
-/keyrefuge          ext4      /dev/block/by-name/keyrefuge          flags=display=keyrefuge
-/cp_debug           emmc      /dev/block/by-name/cp_debug           flags=display=cp_debug
-/modem2             emmc      /dev/block/by-name/radio2             flags=display=modem2
-/vbmeta_samsung     emmc      /dev/block/by-name/vbmeta_samsung     flags=display=vbmeta_samsung
-/optics             ext4      /dev/block/by-name/optics             flags=display=optics
-/prism              ext4      /dev/block/by-name/prism              flags=display=prism
-/vbmeta_system      emmc      /dev/block/by-name/vbmeta_system      flags=display=vbmeta_system
+# mount point   fstype  device                                 device2  	   flags
+#
+/boot            emmc  /dev/block/platform/13520000.ufs/by-name/boot     flags=backup=1;display="Boot"
+/cache           ext4  /dev/block/platform/13520000.ufs/by-name/cache    flags=backup=0;display="Cache"
+/recovery        emmc  /dev/block/platform/13520000.ufs/by-name/recovery flags=backup=1;display="Recovery"
+/data            f2fs  /dev/block/platform/13520000.ufs/by-name/userdata 
+/dtb_image       emmc  /dev/block/platform/13520000.ufs/by-name/dtb      flags=backup=1;flashimg;display="DT Image"
+/dtbo_image      emmc  /dev/block/platform/13520000.ufs/by-name/dtbo     flags=backup=1;flashimg;display="DTBO Image"
+/efs             ext4  /dev/block/platform/13520000.ufs/by-name/efs      flags=backup=1;display="EFS"
+/omr             ext4  /dev/block/platform/13520000.ufs/by-name/omr      flags=backup=0;display="OMR"
+/omr_image       emmc  /dev/block/platform/13520000.ufs/by-name/omr      flags=backup=1;flashimg;display="OMR Image"
+/product         ext4  /dev/block/platform/13520000.ufs/by-name/product  flags=backup=1;wipeingui;display="Product"
+/product_image   emmc  /dev/block/platform/13520000.ufs/by-name/product  flags=backup=1;flashimg;display="Product Image"
+/system_root     ext4  /dev/block/platform/13520000.ufs/by-name/system   flags=backup=1;wipeingui;display="System"
+/system_image    emmc  /dev/block/platform/13520000.ufs/by-name/system   flags=backup=1;flashimg;display="System Image"
+/vendor          ext4  /dev/block/platform/13520000.ufs/by-name/vendor   flags=backup=1;wipeingui;display="Vendor"
+/vendor_image    emmc  /dev/block/platform/13520000.ufs/by-name/vendor   flags=backup=1;flashimg;display="Vendor Image"
+
+#external SDcard
+#
+/external_sd     vfat  /dev/block/mmcblk0p1         /dev/block/mmcblk0      flags=storage;wipeingui;removable
+/usb-otg         vfat  /dev/block/sdf1
