@@ -19,4 +19,4 @@
 #external SDcard
 #
 /external_sd     vfat  /dev/block/mmcblk0p1         /dev/block/mmcblk0      flags=storage;wipeingui;removable
-/usb-otg         vfat  /dev/block/sdf1
+/usb-otg         vfat  /dev/block/sdf1              /dev/block/sdf          flags=display="USB-OTG";storage;wipeingui;removable
